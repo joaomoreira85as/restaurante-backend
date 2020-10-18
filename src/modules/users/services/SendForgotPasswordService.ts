@@ -2,8 +2,8 @@ import AppError from '@shared/errors/AppError';
 import { inject, injectable } from 'tsyringe';
 import IMailProvider from '@shared/container/providers/MailProvider/models/IMailProvider';
 import path from 'path';
-import IUsersRepository from '../repositories/IUsersRespository';
-import IUserTokensRepository from '../repositories/IUserTokensRespository';
+import IUsersRepository from '../repositories/IUsersRepository';
+import IUserTokensRepository from '../repositories/IUserTokensRepository';
 
 interface IRequest {
   email: string;

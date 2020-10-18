@@ -1,6 +1,6 @@
 import { inject, injectable } from 'tsyringe';
 import User from '../infra/typeorm/entities/User';
-import IUsersRepository from '../repositories/IUsersRespository';
+import IUsersRepository from '../repositories/IUsersRepository';
 
 interface IRequest {
   company_id: number;

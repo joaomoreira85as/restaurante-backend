@@ -1,7 +1,7 @@
 import Company from '@modules/companies/infra/typeorm/entities/Company';
 import AppError from '@shared/errors/AppError';
 import { inject, injectable } from 'tsyringe';
-import ICompaniesRepository from '../repositories/ICompaniesRespository';
+import ICompaniesRepository from '../repositories/ICompaniesRepository';
 
 interface IRequest {
   company_id: number;

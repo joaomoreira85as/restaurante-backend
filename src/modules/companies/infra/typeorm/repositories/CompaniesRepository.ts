@@ -1,9 +1,9 @@
 import { getRepository, Repository } from 'typeorm';
-import ICompaniesRespository from '@modules/companies/repositories/ICompaniesRespository';
+import ICompaniesRepository from '@modules/companies/repositories/ICompaniesRepository';
 import ICreateCompanyDTO from '@modules/companies/dtos/ICreateCompanyDTO';
 import Company from '../entities/Company';
 
-class CompaniesRepository implements ICompaniesRespository {
+class CompaniesRepository implements ICompaniesRepository {
   private ormRepository: Repository<Company>;
 
   constructor() {

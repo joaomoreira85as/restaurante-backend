@@ -1,6 +1,6 @@
 import AppError from '@shared/errors/AppError';
 import { inject, injectable } from 'tsyringe';
-import IUsersRepository from '../repositories/IUsersRespository';
+import IUsersRepository from '../repositories/IUsersRepository';
 
 interface IRequest {
   user_id: number;
@@ -13,11 +13,8 @@ class DeleteUserService {
     private usersRepository: IUsersRepository,
   ) {}
 
-  public async execute({
-    user_id,
-  }: IRequest): Promise<void> {
-    
-    if (!await this.usersRepository.delete(user_id)) {
+  public async execute({ user_id }: IRequest): Promise<void> {
+    if (!(await this.usersRepository.delete(user_id))) {
       throw new AppError('User cannot be deleted');
     }
   }

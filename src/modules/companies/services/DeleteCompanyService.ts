@@ -1,5 +1,5 @@
 import { inject, injectable } from 'tsyringe';
-import ICompanyRepository from '../repositories/ICompaniesRespository';
+import ICompanyRepository from '../repositories/ICompaniesRepository';
 
 @injectable()
 class DeleteCompanyService {
